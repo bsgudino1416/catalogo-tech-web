@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Catálogo Tech Web: tienda de tecnología con precios base transparentes y simulador interactivo de cotización.">
+  <title>Catálogo Tech Web | Tienda de Tecnología y Cotizador</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="components.css">
+</head>
+<body>
+  <!-- Encabezado y navegación principal -->
+  <header class="site-header">
+    <div class="container header-container">
+      <div class="brand">
+        <p class="brand-name">Catálogo Tech Web</p>
+        <p class="brand-tagline">Hardware, periféricos y cotización al instante</p>
+      </div>
+
+      <nav class="main-nav" aria-label="Navegación principal">
+        <ul class="nav-list">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#catalogo">Catálogo</a></li>
+          <li><a href="#tarifas">Descuentos</a></li>
+          <li><a href="#simulador">Cómo cotizar</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Contenido principal -->
+  <main id="inicio" class="main-content">
+    <!-- Sección de bienvenida -->
+    <section class="hero-section" aria-labelledby="hero-title">
+      <div class="container">
+        <span class="badge badge-promo">Cotizador Interactivo 2026</span>
+        <h1 id="hero-title">Equipa tu espacio con tecnología de alto rendimiento</h1>
+        <p class="hero-description">
+          Revisa nuestros productos y precios base unitarios antes de iniciar tu cotización
+          en el simulador. Obtén descuentos automáticos al llevar 3 o más unidades.
+        </p>
+        <div class="hero-actions">
+          <a href="#catalogo" class="btn-link">Explorar catálogo</a>
+          <a href="#tarifas" class="btn-link btn-secondary">Ver descuentos</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Catálogo de productos (alineado a opciones 1, 2 y 3 del simulador) -->
+    <section id="catalogo" class="catalog-section" aria-labelledby="catalogo-title">
+      <div class="container">
+        <header class="section-header">
+          <h2 id="catalogo-title">Catálogo de Productos</h2>
+          <p>Utiliza el número de opción (1, 2 o 3) cuando el simulador te solicite elegir un artículo.</p>
+        </header>
+
+        <div class="catalog-grid">
+          <article class="product-card">
+            <div class="card-badges">
+              <span class="badge badge-option">Opción 1</span>
+              <span class="badge badge-featured">Más vendido</span>
+            </div>
+            <h3 class="product-title">Laptop Ultrabook Pro 15"</h3>
+            <p class="product-summary">Ideal para programación, diseño ligero y trabajo multitarea diario.</p>
+            <ul class="product-specs">
+              <li>Procesador de 6 núcleos y 12 hilos</li>
+              <li>16 GB RAM DDR5 + SSD 512 GB NVMe</li>
+              <li>Pantalla 15.6" Full HD antirreflejo</li>
+            </ul>
+            <div class="product-footer">
+              <span class="price-label">Precio base unitario</span>
+              <p class="product-price"><data value="780">$780.00</data> <small>USD</small></p>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="card-badges">
+              <span class="badge badge-option">Opción 2</span>
+              <span class="badge badge-popular">Recomendado</span>
+            </div>
+            <h3 class="product-title">Teclado Mecánico Inalámbrico</h3>
+            <p class="product-summary">Escritura precisa y cómoda con conectividad versátil para cualquier setup.</p>
+            <ul class="product-specs">
+              <li>Switches táctiles silenciosos (hot-swap)</li>
+              <li>Conexión dual Bluetooth 5.1 y USB-C</li>
+              <li>Retroiluminación blanca regulable</li>
+            </ul>
+            <div class="product-footer">
+              <span class="price-label">Precio base unitario</span>
+              <p class="product-price"><data value="95">$95.00</data> <small>USD</small></p>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="card-badges">
+              <span class="badge badge-option">Opción 3</span>
+              <span class="badge badge-discount">Envío gratis</span>
+            </div>
+            <h3 class="product-title">Audífonos Inalámbricos ANC</h3>
+            <p class="product-summary">Aislamiento acústico para concentrarte en tus clases, código o llamadas.</p>
+            <ul class="product-specs">
+              <li>Cancelación activa de ruido (ANC)</li>
+              <li>Hasta 30 horas de batería continua</li>
+              <li>Micrófono integrado con reducción de eco</li>
+            </ul>
+            <div class="product-footer">
+              <span class="price-label">Precio base unitario</span>
+              <p class="product-price"><data value="130">$130.00</data> <small>USD</small></p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tabla de tarifas y descuentos por volumen -->
+    <section id="tarifas" class="pricing-section" aria-labelledby="tarifas-title">
+      <div class="container">
+        <header class="section-header">
+          <h2 id="tarifas-title">Tabla de Tarifas y Descuentos</h2>
+          <p>Los descuentos se aplican automáticamente sobre el subtotal según la cantidad cotizada.</p>
+        </header>
+
+        <div class="table-wrapper">
+          <table class="pricing-table">
+            <caption>Escala vigente de descuentos por volumen en Catálogo Tech Web</caption>
+            <thead>
+              <tr>
+                <th scope="col">Cantidad de unidades</th>
+                <th scope="col">Nivel</th>
+                <th scope="col">Descuento</th>
+                <th scope="col">Condición</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1 a 2 unidades</td>
+                <td><span class="badge badge-standard">Estándar</span></td>
+                <td><strong>0%</strong></td>
+                <td>Aplica el precio base publicado en el catálogo</td>
+              </tr>
+              <tr>
+                <td>3 a 5 unidades</td>
+                <td><span class="badge badge-discount">Mayorista</span></td>
+                <td><strong>10%</strong></td>
+                <td>Descuento directo por compra múltiple</td>
+              </tr>
+              <tr>
+                <td>6 o más unidades</td>
+                <td><span class="badge badge-promo">Corporativo</span></td>
+                <td><strong>15%</strong></td>
+                <td>Tarifa preferencial para equipos y oficinas</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="4">Precios expresados en dólares estadounidenses (USD). Simulación con fines académicos.</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Guía de uso del simulador sin DOM -->
+    <section id="simulador" class="simulator-info-section" aria-labelledby="simulador-title">
+      <div class="container">
+        <header class="section-header">
+          <h2 id="simulador-title">¿Cómo funciona el simulador de cotización?</h2>
+          <p>La interacción se ejecuta mediante cuadros de diálogo del navegador y salida en consola.</p>
+        </header>
+
+        <ol class="steps-list">
+          <li><strong>Registro:</strong> Ingresa tu nombre y confirma si deseas iniciar una nueva cotización.</li>
+          <li><strong>Selección:</strong> Escribe el número del producto del catálogo (<strong>1</strong>, <strong>2</strong> o <strong>3</strong>).</li>
+          <li><strong>Cantidad:</strong> Indica cuántas unidades necesitas para calcular el subtotal y el descuento.</li>
+          <li><strong>Resumen:</strong> Revisa el total en la ventana emergente y presiona <kbd>F12</kbd> para ver el detalle completo en la consola.</li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <p><strong>Catálogo Tech Web</strong> &mdash; Tienda de Tecnología</p>
+        <p>Proyecto grupal de Desarrollo Web Colaborativo con Git y GitHub.</p>
+      </div>
+      <div class="footer-meta">
+        <p>HTML5 Semántico &middot; CSS3 Responsivo &middot; JavaScript Fundamental</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script del simulador -->
+  <script src="app.js"></script>
+</body>
+</html>
